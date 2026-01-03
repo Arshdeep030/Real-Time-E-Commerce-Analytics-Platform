@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/.user.yml
+target/
+
+# Airflow
+airflow/logs/
+airflow/*.db
+airflow/airflow.cfg
+
+# Spark
+spark/checkpoints/
+
+# Kafka
+*.log
+
+# OS
+.DS_Store
+

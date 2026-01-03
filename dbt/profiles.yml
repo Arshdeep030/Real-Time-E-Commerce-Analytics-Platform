@@ -1,0 +1,16 @@
+realtime_ecomm_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      method: iam
+      is_serverless: true
+      serverless_work_group: default-workgroup
+      serverless_acct_id: "478867930203"
+      region: us-west-2
+      host: "default-workgroup.478867930203.us-west-2.redshift-serverless.amazonaws.com"
+      port: 5439
+      user: Arshdeep_kaur  # <--- ADD THIS (Example: 'admin' or your IAM name)
+      database: dev
+      schema: analytics
+      threads: 4

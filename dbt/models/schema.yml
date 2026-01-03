@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_user_sessions
+    tests:
+      - not_null:
+          column_name: user_id
+      - not_null:
+          column_name: window_start
+
+  - name: dim_users
+    tests:
+      - not_null:
+          column_name: user_id

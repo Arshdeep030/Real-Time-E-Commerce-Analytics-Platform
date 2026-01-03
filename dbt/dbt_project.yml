@@ -1,0 +1,15 @@
+name: ecommerce_analytics
+version: "1.0"
+config-version: 2
+
+profile: realtime_ecomm_analytics
+
+# ✅ THIS IS CORRECT — DO NOT CHANGE STRUCTURE
+model-paths: ["models"]
+
+models:
+  ecommerce_analytics:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
